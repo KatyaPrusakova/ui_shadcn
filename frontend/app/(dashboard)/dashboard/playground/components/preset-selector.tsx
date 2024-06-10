@@ -26,11 +26,12 @@ interface PresetSelectorProps extends PopoverProps {
   presets: Preset[]
 }
 
-export function PresetSelector({ presets, ...props }: PresetSelectorProps) {
+export function PresetSelector({ presets = [], ...props }: PresetSelectorProps) {
   const [open, setOpen] = React.useState(false)
   const [selectedPreset, setSelectedPreset] = React.useState<Preset>()
   const router = useRouter()
 
+  console.log("presets", presets)
   return (
     <Popover open={open} onOpenChange={setOpen} {...props}>
       <PopoverTrigger asChild>
@@ -71,9 +72,10 @@ export function PresetSelector({ presets, ...props }: PresetSelectorProps) {
             ))}
           </CommandGroup>
           <CommandGroup className="pt-0">
-            <CommandItem onSelect={() => router.push("/examples")}>
+            {/* <CommandItem onSelect={() => console.log("clicked")}>
+         
               More examples
-            </CommandItem>
+            </CommandItem>  */}
           </CommandGroup>
         </Command>
       </PopoverContent>
