@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { cva } from "class-variance-authority";
 import { useStepper } from "./use-stepper";
+import { Step } from "./step";
 
 interface StepLabelProps {
 	isCurrentStep?: boolean;
@@ -86,5 +87,6 @@ const StepLabel = ({
 		</div>
 	) : null;
 };
+StepLabel.displayName = "StepLabel";
 
 export { StepLabel };

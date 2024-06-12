@@ -64,7 +64,7 @@ export function PresetActions() {
             <DialogTitle>Content filter preferences</DialogTitle>
             <DialogDescription>
               The content filter flags text that may violate our content policy.
-              It&apos;s powered by our moderation endpoint which is free to use
+              Its powered by our moderation endpoint which is free to use
               to moderate your OpenAI API traffic. Learn more.
             </DialogDescription>
           </DialogHeader>
@@ -98,7 +98,7 @@ export function PresetActions() {
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
               This action cannot be undone. This preset will no longer be
-              accessible by you or others you&apos;ve shared it with.
+              accessible by you or others you have shared it with.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

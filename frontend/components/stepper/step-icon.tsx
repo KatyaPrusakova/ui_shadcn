@@ -4,6 +4,7 @@ import { CheckIcon, Loader2, X } from "lucide-react";
 import * as React from "react";
 import type { IconType } from "./types";
 import { useStepper } from "./use-stepper";
+import { Step } from "./step";
 
 interface StepIconProps {
 	isCompletedStep?: boolean;
@@ -128,5 +129,6 @@ const StepIcon = React.forwardRef<HTMLDivElement, StepIconProps>(
 		]);
 	},
 );
+StepIcon.displayName = "StepIcon";
 
 export { StepIcon };

@@ -13,10 +13,10 @@ export default function NotFound() {
         404
       </span>
       <h2 className="font-heading my-2 text-2xl font-bold">
-        Something&apos;s missing
+        Something is missing
       </h2>
       <p>
-        Sorry, the page you are looking for doesn&apos;t exist or has been
+        Sorry, the page you are looking for does not exist or has been
         moved.
       </p>
       <div className="mt-8 flex justify-center gap-2">
